@@ -1,0 +1,10 @@
+<body class='container'>
+    <div class='navbar'>
+        <h3 class='logo'><img src='/assets/images/bloc-logo-white.png'></h3>
+        <div class='chat-list' ng-repeat='rooms in room.list track by $index'>
+            <span class='room-list' ng-repeat='(key, value) in rooms'>{{ ' | ' + value.$id + '  |  ' }}</span>
+        </div> 
+    </div>
+    <div class='chat-room'>
+    </div>
+</body>

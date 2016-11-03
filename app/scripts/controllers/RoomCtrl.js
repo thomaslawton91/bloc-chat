@@ -1,8 +1,10 @@
 (function () {
     function RoomCtrl(Room) {
-       
-        this.rooms = Room;
-    }
+        
+        this.list = Room;
+
+    };
+
     angular
         .module('blocChat')
         .controller('RoomCtrl', ['Room', RoomCtrl]);

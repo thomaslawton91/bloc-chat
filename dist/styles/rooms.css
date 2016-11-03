@@ -1,0 +1,21 @@
+.navbar {
+    background-color: pink;
+    position:fixed;
+    height: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+.room-list {
+    
+    color: white;
+    font-weight: 800;
+    
+}
+
