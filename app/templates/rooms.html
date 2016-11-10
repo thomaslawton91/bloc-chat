@@ -3,6 +3,7 @@
         <h3 class='logo'><img src='/assets/images/bloc-logo-white.png'></h3>
         <div class='chat-list' ng-repeat='rooms in room.list track by $index'>
             <span class='room-list' ng-repeat='(key, value) in rooms'>{{ ' | ' + value.$id + '  |  ' }}</span>
+            <button type='button' ng-click='room.openModal()'>New Room</button>
         </div> 
     </div>
     <div class='chat-room'>
