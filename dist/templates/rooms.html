@@ -1,11 +1,16 @@
 <body class='container'>
     <div class='navbar'>
         <h3 class='logo'><img src='/assets/images/bloc-logo-white.png'></h3>
-        <div class='chat-list' ng-repeat='rooms in room.list'>
-            <span class='room-list' ng-repeat='(key, value) in rooms'>{{' | ' + value.$id + ' | '}}</span>
-        </div> 
         <button class='new-room-button' type='button' ng-click='room.openModal()'>New Room</button>
+        <div class='chat-list' ng-repeat='rooms in room.list'>
+            <a class='room-list' ng-click='room.selectedRoom(rooms)'> {{ rooms.name }} </a>
+        </div>
     </div>
     <div class='chat-room'>
+        <h3>{{ room.chosenRoom.name }}</h3>
+        <div ng-repeat='message in room.messages'>
+            <p>{{ message.name }}</p>
+            <p>{{ message.message }}</p>
+        </div>
     </div>
 </body>

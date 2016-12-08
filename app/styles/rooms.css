@@ -1,28 +1,38 @@
 .navbar {
     background-color: pink;
-    position:fixed;
-    height: 15%;
-    width: 100%;
+    position: fixed;
+    clear: both;
+    height: 100%;
+    width: 30%;
     text-align: center;
 }
-
 .logo {
     display: flex;
     justify-content: center;
 }
-
-
 .room-list {
-    
     color: white;
     font-weight: 800;
-    
+    cursor: pointer;
 }
-
 .new-room-button {
-    
-    position: absolute;
-    right: 10px;
-    top: 5px;
+    position: flex;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    line-height: 40px;
+    border: 2px solid white;
+    text-align: center;
+    width: 120px;
+    padding: 0px;
+    font-weight: 800;
+    color: #fff;
 }
-
+.chat-room {
+    float: right;
+    position: relative;
+    height: 1000px;
+    width: 70%;
+    background-color: lavender;
+}
