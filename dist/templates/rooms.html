@@ -9,8 +9,7 @@
     <div class='chat-room'>
         <h3>{{ room.chosenRoom.name }}</h3>
         <div ng-repeat='message in room.messages'>
-            <p>{{ message.name }}</p>
-            <p>{{ message.message }}</p>
+            <p>{{ message.name }} : {{ message.message }} // sent at {{ message.time }}</p>
         </div>
     </div>
 </body>
