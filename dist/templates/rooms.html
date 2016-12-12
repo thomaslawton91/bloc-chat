@@ -9,7 +9,9 @@
     <div class='chat-room'>
         <h3>{{ room.chosenRoom.name }}</h3>
         <div ng-repeat='message in room.messages'>
-            <p>{{ message.name }} : {{ message.message }} // sent at {{ message.time }}</p>
+            <p>{{ message.username }} : {{ message.content }} // sent at {{ message.sentAt }}</p>
         </div>
+        <input type='text' placeholder='New message' ng-model='room.content'>
+        <button type='button' ng-click='room.sendMessage()'>Send</button>
     </div>
 </body>
