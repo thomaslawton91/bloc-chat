@@ -20,6 +20,23 @@
                 templateUrl: '/templates/rooms.html'
             });
     }
+    function BlocChatCookies($cookies, $uibModal) {
+        var currentUser = $cookies.get('blocChatCurrentUser');
+        if (!currentUser || currentUser === '') {
+            var modalInstance = $uibModal.open({
+                animation: true,
+                size: 'sm',
+                templateUrl: '/templates/nameModal.html',
+                controller: 'NameModalCtrl'
+            });
+            modalInstance.result.then(function (selectedItem) {
+                this.selected = selectedItem;
+            });
+        };
+
+    }
     angular
-        .module('blocChat', ['firebase', 'ui.router', 'ui.bootstrap']).config(config);
+        .module('blocChat', ['firebase', 'ui.router', 'ui.bootstrap', 'ngCookies'])
+        .config(config)
+        .run(['$cookies', '$uibModal', BlocChatCookies]);
 })();

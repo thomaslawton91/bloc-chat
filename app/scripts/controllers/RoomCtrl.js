@@ -6,8 +6,8 @@
                 var modalInstance = $uibModal.open({
                 animation: true,
                 size: 'sm',
-                templateUrl: '/templates/modal.html',
-                controller: 'ModalCtrl'
+                templateUrl: '/templates/chatModal.html',
+                controller: 'ChatModalCtrl'
             });
                 modalInstance.result.then(function(selectedItem) {
                     this.selected = selectedItem;
