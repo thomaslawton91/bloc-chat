@@ -1,5 +1,5 @@
 (function () {
-    function ModalCtrl($scope, $uibModalInstance) {
+    function ChatModalCtrl($scope, $uibModalInstance) {
         $scope.newRoom = {};
         $scope.save = function() {
             $uibModalInstance.close($scope.newRoom);
@@ -12,5 +12,5 @@
     }
     angular
         .module('blocChat')
-        .controller('ModalCtrl', ['$scope', '$uibModalInstance', ModalCtrl]);
+        .controller('ChatModalCtrl', ['$scope', '$uibModalInstance', ChatModalCtrl]);
 })();
