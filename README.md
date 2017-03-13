@@ -1,6 +1,7 @@
-## Bloc Frontend Project Starter
-
-A starter application for student projects in Bloc's [Frontend Web Development Course](https://www.bloc.io/frontend-development-bootcamp).
+# Bloc Chat
+Bloc Chat is an SPA online chat application built using Angular JS, jQuery, Firebase, AngularFire, and HTML/CSS.
+The purpose of building Bloc Chat was to better understand Angular routing as well as to become familiar with using Firebase as a backend. 
+Creating Bloc Chat was also a practice in understanding how to use included libraries to create applications (AngularFire).
 
 ## Configuration
 
